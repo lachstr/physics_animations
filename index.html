@@ -21,7 +21,28 @@ layout: default
 	<video width="500" height="375" controls>
 	  <source src="quantitative-assesment-real.mp4" type="video/mp4">
 	</video> 
+	<p>No? Let's have a look at larger angles.<p>
+
+	<video width="500" height="375" controls>
+	  <source src="quantitative-assesment-large-angle.mp4" type="video/mp4">
+	</video> 
+	<video width="500" height="375" controls>
+	  <source src="quantitative-assesment-real-large-angle.mp4" type="video/mp4">
+	</video>
 	<p>The sine model is a poor approximation for large angles!<p>
+
+	<pre class="prettyprint">def real_pendulum_ode(conditions, t, ℓ=20, g=980):
+    ##current state of θ and ω is in the conditions list
+    θ, ω = conditions
+    
+    dydt = [ω, -g/ℓ*θ]
+    return dydt</pre>
+
+    <p>Solving the real system is as simple as calling <code>odeint(real_pendulum_ode, init_conditions, t_interval)</code>. Imagine doing such a calculation with pencil and paper! We live in a brilliant time in history.</p>
+
+
+
+
    <h2 class="page-heading">Electric Fields</h2>
 
 	<video width="500" height="375" controls>
@@ -31,4 +52,5 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
