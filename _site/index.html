@@ -46,7 +46,8 @@
   <img src="pendulum-gif.gif">
 
   <h3 class="page-heading">Real and Approximated</h3>
-  	<p>Can you tell the difference?</p>
+  	<p>Here we will examine qualitatively the applicabiltiy of the sine based model in modelling pendulum motion. Let's first consider releasing from an angle of &pi;/3. Can you tell the difference?</p>
+
 
 	<video width="500" height="375" controls>
 	  <source src="quantitative-assesment.mp4" type="video/mp4">
@@ -55,7 +56,7 @@
 	<video width="500" height="375" controls>
 	  <source src="quantitative-assesment-real.mp4" type="video/mp4">
 	</video> 
-	<p>No? Let's have a look at larger angles.<p>
+	<p>No? Let's have a look at releasing from 2&pi;/3.<p>
 
 	<video width="500" height="375" controls>
 	  <source src="quantitative-assesment-large-angle.mp4" type="video/mp4">
@@ -63,7 +64,7 @@
 	<video width="500" height="375" controls>
 	  <source src="quantitative-assesment-real-large-angle.mp4" type="video/mp4">
 	</video>
-	<p>The sine model is a poor approximation for large angles!<p>
+	<p>Qualitatively, we deduce that the sine model does not match our intuition for how real pendulums behave at large angles.<p>
 
 	<pre class="prettyprint">def real_pendulum_ode(conditions, t, ℓ=0.2, g=9.8):
     ##current state of θ and ω is in the conditions list
