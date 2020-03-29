@@ -42,11 +42,11 @@
 
   <h2 class="page-heading">Pendulums</h2>
 
-  <p>The matplotlib animator can give striking results.</p>
+  <p>Let's see how we can use matplotlib to model pendulum motion.</p>
   <img src="pendulum-gif.gif">
 
   <h3 class="page-heading">Real and Approximated</h3>
-  	<p>Here we will examine qualitatively the applicabiltiy of the sine based model in modelling pendulum motion. Let's first consider releasing from an angle of &pi;/3. Can you tell the difference?</p>
+  	<p>Here we will examine qualitatively the applicabiltiy of the theta based model in modelling pendulum motion. Let's first consider releasing from an angle of &pi;/3. Can you tell the difference?</p>
 
 
 	<video width="500" height="375" controls>
@@ -64,13 +64,13 @@
 	<video width="500" height="375" controls>
 	  <source src="quantitative-assesment-real-large-angle.mp4" type="video/mp4">
 	</video>
-	<p>Qualitatively, we deduce that the sine model does not match our intuition for how real pendulums behave at large angles.<p>
+	<p>Qualitatively, we deduce that the theta model does not match our intuition for how real pendulums behave at large angles.<p>
 
 	<pre class="prettyprint">def real_pendulum_ode(conditions, t, ℓ=0.2, g=9.8):
     ##current state of θ and ω is in the conditions list
     θ, ω = conditions
     
-    dydt = [ω, -g/ℓ*θ]
+    dydt = [ω, -g/ℓ*sin(θ)]
     return dydt</pre>
 
     <p>Solving the real system is as simple as calling <code>odeint(real_pendulum_ode, init_conditions, t_interval)</code>. Imagine doing such a calculation with pencil and paper!</p>
@@ -90,6 +90,10 @@
 	<video width="500" height="375" controls>
 	  <source src="ringofcharge.mp4" type="video/mp4">
 	</video> 
+
+	<h2 class="page-heading">Adiabatic Processes</h2>
+
+
 
   <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
 </body>
