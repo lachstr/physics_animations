@@ -9,6 +9,6 @@ Here 'f' refers to the degrees of freedom of a gas. Monatomic gases have 3 degre
 - Does it require more work to adiabatically compress a diatomic gas rather than a monatomic one? 
 ![Temperature Change]({{ site.baseurl }}/jupyter/temperaturechange-plot.png)
 - Given a gas sample is adiabatically compressed, would a diatomic gas have a larger final volume?
-![Compression Factors](/jupyter/compressionfactors-plot.png)
+![Compression Factors]({{ site.baseurl }}/jupyter/compressionfactors-plot.png)
 
 Note that we are considering equi-molar samples of diatomic and monatomic gas.
