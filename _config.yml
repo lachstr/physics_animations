@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "show_excerpts:"
   this content it becomes useful for others in some meaningful way. Should
   you have any questions or suggestions; feel free to contact me.
 show_excerpts: false # set to true to show excerpts on the homepage
-
+base_url: "/physics_animations"
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
