@@ -1,0 +1,40 @@
+I" <p>Let’s see how we can use matplotlib to model pendulum motion.</p>
+
+<p><img src="/jupyter/pendulum-gif.gif" alt="Pendulum" /></p>
+
+<p>$x^2+1=0$</p>
+
+<p>Here we will examine qualitatively the applicabiltiy of the theta based model in modelling pendulum motion. Let’s first consider releasing from an angle of π/3. Can you tell the difference?</p>
+
+<video width="700" height="450" controls="">
+	  <source src="/jupyter/quantitative-assesment.mp4" type="video/mp4" />
+</video>
+
+<video width="700" height="450" controls="">
+	  <source src="/jupyter/quantitative-assesment-real.mp4" type="video/mp4" />
+</video>
+
+<p>No? Let’s have a look at releasing from 2π/3.</p>
+
+<video width="700" height="450" controls="">
+	  <source src="/jupyter/quantitative-assesment-large-angle.mp4" type="video/mp4" />
+</video>
+<video width="700" height="450" controls="">
+	  <source src="/jupyter/quantitative-assesment-real-large-angle.mp4" type="video/mp4" />
+</video>
+
+<p>Qualitatively, we deduce that the theta model does not match our intuition for how real pendulums behave at large angles.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">real_pendulum_ode</span><span class="p">(</span><span class="n">conditions</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="err">ℓ</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">g</span><span class="o">=</span><span class="mf">9.8</span><span class="p">):</span>
+    <span class="c1">##current state of θ and ω is in the conditions list
+</span>    <span class="err">θ</span><span class="p">,</span> <span class="err">ω</span> <span class="o">=</span> <span class="n">conditions</span>
+    
+    <span class="n">dydt</span> <span class="o">=</span> <span class="p">[</span><span class="err">ω</span><span class="p">,</span> <span class="o">-</span><span class="n">g</span><span class="o">/</span><span class="err">ℓ</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="err">θ</span><span class="p">)]</span></code></pre></figure>
+
+<p>Solving the real system is as simple as</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span>
+<span class="n">solutions</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">real_pendulum_ode</span><span class="p">,</span> <span class="n">init_conditions</span><span class="p">,</span> <span class="n">t_interval</span><span class="p">)</span></code></pre></figure>
+
+<p>Imagine doing such a calculation with pencil and paper! Newton would be proud.</p>
+:ET
