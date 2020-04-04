@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-04T23:03:31+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">physics_animations</title><subtitle>A blog collection of animations and graphs which I have created as part of my study of physical systems and mathematics. I hope that by sharing this content it becomes useful for others in some meaningful way. Should you have any questions or suggestions; feel free to contact me.
+</subtitle><author><name>Lachlan Macartney</name><email>lachlan.macartney.student@gmail.com</email></author><entry><title type="html">Bessel Function Animation</title><link href="http://localhost:4000/misc/2020/04/03/bessel-function-animation.html" rel="alternate" type="text/html" title="Bessel Function Animation" /><published>2020-04-03T00:00:00+11:00</published><updated>2020-04-03T00:00:00+11:00</updated><id>http://localhost:4000/misc/2020/04/03/bessel-function-animation</id><content type="html" xml:base="http://localhost:4000/misc/2020/04/03/bessel-function-animation.html">&lt;p&gt;&lt;a href=&quot;/jupyter/bessel.mp4&quot;&gt;Bessel Function Iterated&lt;/a&gt;&lt;/p&gt;
+
+&lt;video width=&quot;1000&quot; height=&quot;900&quot; controls=&quot;&quot;&gt;
+	  &lt;source src=&quot;/jupyter/bessel.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_0^\inf&lt;/script&gt;</content><author><name>Lachlan Macartney</name><email>lachlan.macartney.student@gmail.com</email></author><summary type="html">Bessel Function Iterated</summary></entry><entry><title type="html">Adiabatic Processes for Monatomic and Diatomic Gases</title><link href="http://localhost:4000/misc/2020/03/28/adiabatic-gas-types.html" rel="alternate" type="text/html" title="Adiabatic Processes for Monatomic and Diatomic Gases" /><published>2020-03-28T00:00:00+11:00</published><updated>2020-03-28T00:00:00+11:00</updated><id>http://localhost:4000/misc/2020/03/28/adiabatic-gas-types</id><content type="html" xml:base="http://localhost:4000/misc/2020/03/28/adiabatic-gas-types.html">&lt;p&gt;Here ‘f’ refers to the degrees of freedom of a gas. Monatomic gases have 3 degrees of freedom at room-temperature, whereas diatomic gases have 5. The first three degrees of freedom come from translational degrees of freedom along the x, y, z axes. Diatomic gasses exhibit two extra degrees of freedom because they undergo distinguishable rotations along the θ, ϕ axes. This results in some interesting phenomena conveyed in the following diagrams. These can be used to ask intriguing questions such as;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Does it require more work to adiabatically compress a diatomic gas rather than a monatomic one? 
+&lt;img src=&quot;/jupyter/temperaturechange-plot.png&quot; alt=&quot;Temperature Change&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Given a gas sample is adiabatically compressed, would a diatomic gas have a larger final volume?
+&lt;img src=&quot;/jupyter/compressionfactors-plot.png&quot; alt=&quot;Compression Factors&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note that we are considering equi-molar samples of diatomic and monatomic gas.&lt;/p&gt;</content><author><name>Lachlan Macartney</name><email>lachlan.macartney.student@gmail.com</email></author><summary type="html">Here ‘f’ refers to the degrees of freedom of a gas. Monatomic gases have 3 degrees of freedom at room-temperature, whereas diatomic gases have 5. The first three degrees of freedom come from translational degrees of freedom along the x, y, z axes. Diatomic gasses exhibit two extra degrees of freedom because they undergo distinguishable rotations along the θ, ϕ axes. This results in some interesting phenomena conveyed in the following diagrams. These can be used to ask intriguing questions such as;</summary></entry><entry><title type="html">Pendulum Approximation Qualitative Analysis</title><link href="http://localhost:4000/misc/2020/02/28/pendulum-analysis.html" rel="alternate" type="text/html" title="Pendulum Approximation Qualitative Analysis" /><published>2020-02-28T00:00:00+11:00</published><updated>2020-02-28T00:00:00+11:00</updated><id>http://localhost:4000/misc/2020/02/28/pendulum-analysis</id><content type="html" xml:base="http://localhost:4000/misc/2020/02/28/pendulum-analysis.html">&lt;p&gt;Let’s see how we can use matplotlib to model pendulum motion.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/jupyter/pendulum-gif.gif&quot; alt=&quot;Pendulum&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;$x^2+1=0$&lt;/p&gt;
+
+&lt;p&gt;Here we will examine qualitatively the applicabiltiy of the theta based model in modelling pendulum motion. Let’s first consider releasing from an angle of π/3. Can you tell the difference?&lt;/p&gt;
+
+&lt;video width=&quot;700&quot; height=&quot;450&quot; controls=&quot;&quot;&gt;
+	  &lt;source src=&quot;/jupyter/quantitative-assesment.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;video width=&quot;700&quot; height=&quot;450&quot; controls=&quot;&quot;&gt;
+	  &lt;source src=&quot;/jupyter/quantitative-assesment-real.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;No? Let’s have a look at releasing from 2π/3.&lt;/p&gt;
+
+&lt;video width=&quot;700&quot; height=&quot;450&quot; controls=&quot;&quot;&gt;
+	  &lt;source src=&quot;/jupyter/quantitative-assesment-large-angle.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;video width=&quot;700&quot; height=&quot;450&quot; controls=&quot;&quot;&gt;
+	  &lt;source src=&quot;/jupyter/quantitative-assesment-real-large-angle.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;Qualitatively, we deduce that the theta model does not match our intuition for how real pendulums behave at large angles.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;real_pendulum_ode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conditions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;ℓ&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;9.8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;##current state of θ and ω is in the conditions list
+&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;θ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;ω&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conditions&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;dydt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ω&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ℓ&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;θ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Solving the real system is as simple as&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.integrate&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;odeint&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;solutions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;odeint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;real_pendulum_ode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init_conditions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t_interval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Imagine doing such a calculation with pencil and paper! Newton would be proud.&lt;/p&gt;</content><author><name>Lachlan Macartney</name><email>lachlan.macartney.student@gmail.com</email></author><summary type="html">Let’s see how we can use matplotlib to model pendulum motion.</summary></entry><entry><title type="html">Electric Fields</title><link href="http://localhost:4000/misc/2020/01/19/electric-fields.html" rel="alternate" type="text/html" title="Electric Fields" /><published>2020-01-19T00:00:00+11:00</published><updated>2020-01-19T00:00:00+11:00</updated><id>http://localhost:4000/misc/2020/01/19/electric-fields</id><content type="html" xml:base="http://localhost:4000/misc/2020/01/19/electric-fields.html">&lt;p&gt;An electron remains trapped in a potential energy well. If it were to aquire slightly more kinetic energy the electron would travel to infinity.&lt;/p&gt;
+
+&lt;video width=&quot;700&quot; height=&quot;450&quot; controls=&quot;&quot;&gt;
+	  &lt;source src=&quot;/jupyter/electron-charged-ring.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;In this situation we consider the electric field observed at a region in space as a like-charged ring approaches passes co-centrically with our point of observation. The simulation starts and ends when the ring is equi-distant away from our position.&lt;/p&gt;
+
+&lt;video width=&quot;700&quot; height=&quot;450&quot; controls=&quot;&quot;&gt;
+	  &lt;source src=&quot;/jupyter/ringofcharge.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;</content><author><name>Lachlan Macartney</name><email>lachlan.macartney.student@gmail.com</email></author><summary type="html">An electron remains trapped in a potential energy well. If it were to aquire slightly more kinetic energy the electron would travel to infinity.</summary></entry></feed>
