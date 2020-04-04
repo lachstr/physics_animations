@@ -12,20 +12,20 @@ $x^2+1=0$
 
 Here we will examine qualitatively the applicabiltiy of the theta based model in modelling pendulum motion. Let's first consider releasing from an angle of &pi;/3. Can you tell the difference?
 
-<video width="700" height="450" controls>
+<video width="550" height="350" controls>
 	  <source src="{{ site.baseurl }}/jupyter/quantitative-assesment.mp4" type="video/mp4">
 </video> 
 
-<video width="700" height="450" controls>
+<video width="550" height="350" controls>
 	  <source src="{{ site.baseurl }}/jupyter/quantitative-assesment-real.mp4" type="video/mp4">
 </video> 
 
 No? Let's have a look at releasing from 2&pi;/3.
 
-<video width="700" height="450" controls>
+<video width="550" height="350" controls>
 	  <source src="{{ site.baseurl }}/jupyter/quantitative-assesment-large-angle.mp4" type="video/mp4">
 </video> 
-<video width="700" height="450" controls>
+<video width="550" height="350" controls>
 	  <source src="{{ site.baseurl }}/jupyter/quantitative-assesment-real-large-angle.mp4" type="video/mp4">
 </video>
 
