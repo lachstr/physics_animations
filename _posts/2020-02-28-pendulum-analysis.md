@@ -6,27 +6,27 @@ categories: misc
 
 Let's see how we can use matplotlib to model pendulum motion.
 
-![Pendulum](/jupyter/pendulum-gif.gif)
+![Pendulum]({{ site.baseurl }}/jupyter/pendulum-gif.gif)
 
 $x^2+1=0$
 
 Here we will examine qualitatively the applicabiltiy of the theta based model in modelling pendulum motion. Let's first consider releasing from an angle of &pi;/3. Can you tell the difference?
 
 <video width="700" height="450" controls>
-	  <source src="/jupyter/quantitative-assesment.mp4" type="video/mp4">
+	  <source src="{{ site.baseurl }}/jupyter/quantitative-assesment.mp4" type="video/mp4">
 </video> 
 
 <video width="700" height="450" controls>
-	  <source src="/jupyter/quantitative-assesment-real.mp4" type="video/mp4">
+	  <source src="{{ site.baseurl }}/jupyter/quantitative-assesment-real.mp4" type="video/mp4">
 </video> 
 
 No? Let's have a look at releasing from 2&pi;/3.
 
 <video width="700" height="450" controls>
-	  <source src="/jupyter/quantitative-assesment-large-angle.mp4" type="video/mp4">
+	  <source src="{{ site.baseurl }}/jupyter/quantitative-assesment-large-angle.mp4" type="video/mp4">
 </video> 
 <video width="700" height="450" controls>
-	  <source src="/jupyter/quantitative-assesment-real-large-angle.mp4" type="video/mp4">
+	  <source src="{{ site.baseurl }}/jupyter/quantitative-assesment-real-large-angle.mp4" type="video/mp4">
 </video>
 
 Qualitatively, we deduce that the theta model does not match our intuition for how real pendulums behave at large angles.
