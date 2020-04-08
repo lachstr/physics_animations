@@ -171,7 +171,7 @@ It seems like the probability asymptotes to 0.5 as the plane size increases...
 Our data is looking abit scarce, let's try doing the same experiment for another few hundred years and a larger assortment of plane sizes...
 
 - A larger assortment of plane sizes will make the pattern more obvious to see
-- A larger number of years will reduce the standard deviation for each point by a factor of the square root of the ratio increase in sample size
+- A larger number of years will increase our confidence in the final mean
 
 ```python
 resulting_prob = {}
