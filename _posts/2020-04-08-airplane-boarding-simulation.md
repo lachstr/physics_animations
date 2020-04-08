@@ -231,4 +231,4 @@ Calling running the same code that was used to produce the last plot gives
 
 ![]({{ site.baseurl }}/jupyter/meanprobvsplanesize-manyplanes-trulyrandom.png)
 
-Which we can see seems independent of the plane size.
+Which seems to be independent of the plane size.
