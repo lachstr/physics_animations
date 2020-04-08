@@ -65,7 +65,7 @@ def last_passenger_sits_in_assigned_seat(plane_size):
         return False
 ```
 
-Adding some print statments to the function we can ensure it works correctly.
+[Adding some print statments]({{site.baseurl}}/jupyter/board_plane_actual.py) to the function we can ensure it works correctly.
 
 ```python
 In[32] last_passenger_sits_in_assigned_seat(plane_size=10)
@@ -151,7 +151,7 @@ for plane_size in plane_sizes:
 
 plt.legend()
 ```
-![plane_hist](/jupyter/plane-hist.png)
+![plane_hist]({{ site.baseurl }}/jupyter/plane-hist.png)
 
 Curiously, we do note that the 10 seat plane has a slightly lower probability than the others. Not so obvious? We can plot the mean probability as a function of plane size.
 
@@ -164,7 +164,7 @@ for plane_size in plane_sizes:
 plt.xlabel('Plane Size')
 plt.ylabel('Mean Probability Final Passenger has Assigned Seat')
 ```
-![pln_mean](/jupyter/meanprobvsplanesize.png)
+![pln_mean]({{ site.baseurl }}/jupyter/meanprobvsplanesize.png)
 
 Interesting indeed! 
 
@@ -203,26 +203,28 @@ for plane_size in plane_sizes:
 plt.xlabel('Plane Size')
 plt.ylabel('Mean Probability Final Passenger has Assigned Seat')
 ```
-![pln_mean](/jupyter/meanprobvsplanesize-manyplanes.png)
+![pln_mean]({{ site.baseurl }}/jupyter/meanprobvsplanesize-manyplanes.png)
 
-It seems that this occurs because we have *guaranteed* the first passenger sits in the wrong seat. This means that the first passenger *never* sits in the correct seat. This has a decreasing effect on the overall probability as the plane size increases.
+It seems that this occurs because we have *guaranteed* the first passenger sits in the wrong seat. This means that the first passenger *never* sits in the correct seat. This has a decreasing effect on the overall probability as the plane size increases - later we'll determine *precisely* what that means.
 
 Instead let's modify our original function so that the passenger chooses a seat at random (meaning, they *may* sit in the correct seat.)
 
-This is done by modifiying
+This is done by swapping out
 
 ```python
 ## Sit the first passenger in the wrong seat
-while (random_wrong_seat := random.randint(0, plane_size-1)) == passengers[0]:
+while (rand_wrong_seat := random.randint(0, plane_size-1)) == passengers[0]:
     pass
-    ## Pick another random seat which isnt the assigned one
+    ## Pick another random seat which isnt the assigned 
+plane[rand_wrong_seat] = 'taken'
 ```
-To 
+with; 
 ```python
 ## Sit the first passenger in a random seat
-rand_seat := random.randint(0, plane_size-1)
+rand_seat = random.randint(0, plane_size-1)
+plane[rand_seat] = 'taken'
 ```
 
 Calling running the same code that was used to produce the last plot gives
 
-![pln_rand_mean](/jupyter/meanprobvsplanesize-manyplanes.png)
+![]({{ site.baseurl }}/jupyter/meanprobvsplanesize-manyplanes-trulyrandom.png)
