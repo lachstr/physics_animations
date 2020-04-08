@@ -1,7 +1,7 @@
 import numpy as np
 import random 
 
-def board_plane(plane_size, PRINT_EVENTS=False):
+def last_passenger_sits_in_assigned_seat(plane_size, PRINT_EVENTS=False):
     
     plane = {}
     
@@ -46,4 +46,4 @@ def board_plane(plane_size, PRINT_EVENTS=False):
     else:
         return False
 
-board_plane(plane_size=10, PRINT_EVENTS=True)
+last_passenger_sits_in_assigned_seat(plane_size=10, PRINT_EVENTS=True)
