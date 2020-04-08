@@ -107,7 +107,7 @@ for plane_size in plane_sizes:
         able_to_sit_in_assigned_seat = 0
         
         for day in range(31):
-            if (board_plane(plane_size)):
+            if (last_passenger_sits_in_assigned_seat(plane_size)):
                 able_to_sit_in_assigned_seat += 1
         
         probability_this_year = able_to_sit_in_assigned_seat/31
@@ -187,7 +187,7 @@ for plane_size in plane_sizes:
         able_to_sit_in_assigned_seat = 0
         
         for day in range(31):
-            if (board_plane(plane_size)):
+            if (last_passenger_sits_in_assigned_seat(plane_size)):
                 able_to_sit_in_assigned_seat += 1
         
         probability_this_year = able_to_sit_in_assigned_seat/31
@@ -231,4 +231,4 @@ Running the same code that was used to produce the last plot gives
 
 ![]({{ site.baseurl }}/jupyter/meanprobvsplanesize-manyplanes-trulyrandom.png)
 
-Which seems to be independent of the plane size.
+Probabilities seem to cluster around 0.5 independently of the plane size.
