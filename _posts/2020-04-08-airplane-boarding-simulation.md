@@ -10,12 +10,12 @@ Let's consider the following scenario;
 
 There are 100 passengers about to board a plane. 
 
-The first passenger to board sits in someone elses seat
+The first passenger to board sits in someone else's seat
 
 Each following passenger;
 
-- Sits in their assigned seat if it is avaliable
-- Otherwise, randomly chooses an avaliable seat
+- Sits in their assigned seat if it is available
+- Otherwise, randomly chooses an available seat
 
 You are the 100th passenger to board the plane, what is the probability that you are able to sit in your assigned seat?
 
@@ -39,7 +39,7 @@ def last_passenger_sits_in_assigned_seat(plane_size):
     ## Sit the first passenger in the wrong seat
     while (rand_wrong_seat := random.randint(0, plane_size-1)) == passengers[0]:
         pass
-        ## Pick another random seat which isnt the assigned one
+        ## Pick another random seat which isn't the assigned one
 
     plane[rand_wrong_seat] = 'taken'
     
@@ -53,12 +53,12 @@ def last_passenger_sits_in_assigned_seat(plane_size):
             ## find a random empty seat for them.
             seats = list(plane.items())
             random.shuffle(seats)
-            for seat_number, avaliability in seats:
-                if avaliability == 'empty':
+            for seat_number, availability in seats:
+                if availability == 'empty':
                     plane[seat_number] = 'taken'
                     break
                     
-    ## Check to see if the last passenger has thier seat
+    ## Check to see if the last passenger has their seat
     if plane[passengers[-1]] == 'empty':
         return True
     else:
@@ -133,7 +133,7 @@ print(data)
 1198  0.387097  0.483871  0.516129  0.645161  0.451613  0.483871
 1199  0.419355  0.548387  0.451613  0.645161  0.451613  0.387097
 ```
-The pandas dataframe is abit difficult to visualise, so we can plot this data on a histogram.
+The pandas dataframe is a bit difficult to visualise, so we can plot this data on a histogram.
 ```python
 import matplotlib.pyplot as plt
 
@@ -168,9 +168,9 @@ Interesting indeed!
 
 It seems like the probability asymptotes to 0.5 as the plane size increases...
 
-Our data is looking abit scarce, let's try doing the same experiement for another few hundred years and and a larger assortment of plane sizes...
+Our data is looking abit scarce, let's try doing the same experiment for another few hundred years and a larger assortment of plane sizes...
 
-- The larger assortment of plane sizes will make the pattern more obious to see
+- The larger assortment of plane sizes will make the pattern more obvious to see
 - The larger number of years will reduce the standard deviation for each point by a factor of the square root of the ratio increase
 
 ```python
@@ -216,7 +216,7 @@ This is done by swapping out
 ## Sit the first passenger in the wrong seat
 while (rand_wrong_seat := random.randint(0, plane_size-1)) == passengers[0]:
     pass
-    ## Pick another random seat which isnt the assigned 
+    ## Pick another random seat which isn't the assigned 
 plane[rand_wrong_seat] = 'taken'
 ```
 with; 
