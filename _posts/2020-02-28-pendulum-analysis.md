@@ -8,7 +8,7 @@ Let's see how we can use matplotlib to model pendulum motion.
 
 ![Pendulum]({{ site.baseurl }}/jupyter/pendulum-gif.gif)
 
-$x^2+1=0$
+![](http://latex.codecogs.com/gif.latex?x^2+1=0)
 
 Here we will examine qualitatively the applicabiltiy of the theta based model in modelling pendulum motion. Let's first consider releasing from an angle of &pi;/3. Can you tell the difference?
 
