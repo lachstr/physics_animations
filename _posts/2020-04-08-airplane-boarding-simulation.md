@@ -90,9 +90,9 @@ One interesting question to ask is;
 
 Is the event that the last passenger sits in their assigned seat independent of the size of the plane?
 
-We could be clever about it and construct a mathematical proof. However, such things are too difficult for the computer scientist. Alas, we shall simulate such events. This has the advantage of being applicable when the situation is more complicated and a proof cannot be demonstrated.
+We could be clever about it and construct a mathematical argument. However, such things are too difficult for the computer scientist. Alas, we shall simulate such events. This has the advantage of being applicable when the situation is more complicated and a proof cannot be demonstrated.
 
-We'll simulate boarding planes of size 10, 30, 60, 100, 150, 200 once on each day of the month, compute the experimental probability that the last passenger was able to sit in their assigned seat that month, then repeat this process for 100 years (1200 months). 
+We will simulate boarding planes of size 10, 30, 60, 100, 150, 200 once on each day of the month, compute the experimental probability that the last passenger was able to sit in their assigned seat that month, then repeat this process for 100 years (1200 months). 
 
 ```python
 resulting_prob = {}
@@ -153,7 +153,7 @@ plt.legend()
 ```
 ![plane_hist]({{ site.baseurl }}/jupyter/plane-hist.png)
 
-Curiously, we do note that the 10 seat plane has a slightly lower probability than the others. Not so obvious? We can plot the mean probability as a function of plane size.
+Curiously, we do note that the 10 seat plane has a lower probability than the others. Not so obvious? We can plot the mean probability as a function of plane size.
 
 ```python
 for plane_size in plane_sizes:
@@ -170,8 +170,8 @@ It seems like the probability asymptotes to 0.5 as the plane size increases...
 
 Our data is looking abit scarce, let's try doing the same experiment for another few hundred years and a larger assortment of plane sizes...
 
-- The larger assortment of plane sizes will make the pattern more obvious to see
-- The larger number of years will reduce the standard deviation for each point by a factor of the square root of the ratio increase
+- A larger assortment of plane sizes will make the pattern more obvious to see
+- A larger number of years will reduce the standard deviation for each point by a factor of the square root of the ratio increase in sample size
 
 ```python
 resulting_prob = {}
@@ -227,7 +227,7 @@ rand_seat = random.randint(0, plane_size-1)
 plane[rand_seat] = 'taken'
 ```
 
-Calling running the same code that was used to produce the last plot gives
+Running the same code that was used to produce the last plot gives
 
 ![]({{ site.baseurl }}/jupyter/meanprobvsplanesize-manyplanes-trulyrandom.png)
 
