@@ -26,7 +26,7 @@ We could attempt to simulate the event with a function like this;
 import numpy as np
 import random 
 
-## We'll generalise the scenario for a number of passengers equal to `plane_size`
+## Generalise the scenario for a number of passengers equal to `plane_size`
 def last_passenger_sits_in_assigned_seat(plane_size):
     plane = {}
     
