@@ -65,7 +65,7 @@ def last_passenger_sits_in_assigned_seat(plane_size):
         return False
 ```
 
-[Adding some print statments]({{site.baseurl}}/jupyter/board_plane_actual.py) to the function we can ensure it works correctly.
+[Adding some print statements]({{site.baseurl}}/jupyter/board_plane_actual.py) to the function we can ensure it works correctly.
 
 ```python
 In[32] last_passenger_sits_in_assigned_seat(plane_size=10)
@@ -230,4 +230,4 @@ Calling running the same code that was used to produce the last plot gives
 
 ![]({{ site.baseurl }}/jupyter/meanprobvsplanesize-manyplanes-trulyrandom.png)
 
-Which we can see is approximately independent of plane size.
+Which we can see seems independent of the plane size.
