@@ -201,6 +201,7 @@ for plane_size in plane_sizes:
 
 plt.xlabel('Plane Size')
 plt.ylabel('Mean Probability Final Passenger has Assigned Seat')
+plt.title('A Millennia of Boarding')
 ```
 ![pln_mean]({{ site.baseurl }}/jupyter/meanprobvsplanesize-manyplanes.png)
 
