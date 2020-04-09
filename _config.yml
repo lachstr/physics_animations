@@ -49,7 +49,14 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
+
 # - about.md
+katex:
+  js_path: "{{ Gem::lib_path }}/assets/js"  # Path used to search for katex.min.js
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    throw_error: true                       # throwOnError - set to false if you want rendering to output error as text rather than a build error
+    error_color: "#cc0000"                  # errorColor
 
 # Build settings
 theme: minima
@@ -57,3 +64,4 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-katex
