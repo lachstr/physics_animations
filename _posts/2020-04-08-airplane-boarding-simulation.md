@@ -235,7 +235,7 @@ Probabilities seem to cluster around 0.5 independently of the plane size. This i
 
 Here we will explore the first situation and see if we can predict the simulation's results analytically.
 
-It is not obvious, but can be shown that the probability mass function for this situation is
+It is not obvious, but can be shown that the probability follows closely the function
 
 <img src="https://latex.codecogs.com/svg.latex?p_S(s)=\frac{s-1}{2(s-1)}&space;\textrm{&space;for&space;}&space;s&space;\in&space;\{n&space;\in&space;N:n>1\}" title="p_S(s)=\frac{s-1}{2(s-1)} \textrm{ for } s \in \{n \in N:n>1\}" />
 
