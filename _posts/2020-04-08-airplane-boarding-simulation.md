@@ -237,7 +237,7 @@ Here we will explore the first situation and see if we can predict the simulatio
 
 For each plane of size <img src="https://latex.codecogs.com/svg.latex?\inline&space;s" title="s" />, the probability that the final passenger sits in their assigned seat is a the outcome of a Bernoulli trial with probability <img src="https://latex.codecogs.com/svg.latex?\inline&space;p" title="p" /> where <img src="https://latex.codecogs.com/svg.latex?\inline&space;p" title="p" /> is given by the function;
 
-<img src="https://latex.codecogs.com/svg.latex?p_S(s)=\frac{s-2}{2s-2)}&space;\textrm{&space;for&space;}&space;s&space;\in&space;\{n&space;\in&space;N:n>1\}" title="p_S(s)=\frac{s-2}{2s-2} \textrm{ for } s \in \{n \in N:n>1\}" />
+<img src="https://latex.codecogs.com/svg.latex?p_S(s)=\frac{s-2}{2s-2}&space;\textrm{&space;for&space;}&space;s&space;\in&space;\{n&space;\in&space;N:n>1\}" title="p_S(s)=\frac{s-2}{2s-2} \textrm{ for } s \in \{n \in N:n>1\}" />
 
 Plotting <img src="https://latex.codecogs.com/svg.latex?\inline&space;p_S(s)" title="p_S(s)" /> ontop of our simulated data we find excellent agreement. 
 
