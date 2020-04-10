@@ -235,14 +235,13 @@ Probabilities seem to cluster around 0.5 independently of the plane size. This i
 
 Here we will explore the first situation and see if we can predict the simulation's results analytically.
 
-It is not obvious, but can be shown that the probability follows closely the function
+While not obvious, it can be shown that the probability follows closely the function
 
 <img src="https://latex.codecogs.com/svg.latex?p_S(s)=\frac{s-2}{2s-2)}&space;\textrm{&space;for&space;}&space;s&space;\in&space;\{n&space;\in&space;N:n>1\}" title="p_S(s)=\frac{s-2}{2s-2} \textrm{ for } s \in \{n \in N:n>1\}" />
 
 where <img src="https://latex.codecogs.com/svg.latex?\inline&space;s" title="s" /> is the plane size.
 
 Plotting <img src="https://latex.codecogs.com/svg.latex?\inline&space;p_S(s)" title="p_S(s)" /> ontop of our simulated data we find excellent agreement. 
-
 
 ![]({{ site.baseurl }}/jupyter/meanprobvsplanesize-manyplanes-analytic.png)
 
