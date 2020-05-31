@@ -17,7 +17,7 @@ For a more precise mathematical description please see this [white paper]({{ sit
 
 The following code is a python implementation of the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique.
 
-```python3
+```python
 class Pendulum:
 
     ...
@@ -41,7 +41,7 @@ class Pendulum:
 
 The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/NewtonsCradle2_3_4_5_equalmasses_simulator.ipynb). However, this pseudocode gives an idea of the general approach;
 
-```python3
+```python
 for t in time_interval:
     cradle.CheckForCollisions()
     
