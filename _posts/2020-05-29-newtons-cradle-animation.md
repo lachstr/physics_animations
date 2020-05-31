@@ -15,9 +15,23 @@ Here "elastic" means the collisions occur conserving energy and momentum.
 
 For a more precise mathematical description please see this [white paper]({{ site.baseurl }}/cradle/cradle_report.pdf).
 
-We will use the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique.
+The following code is a python implementation of the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique.
 
-The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/NewtonsCradle2_3_4_5_equalmasses_simulator.ipynb).
+```python3
+
+```
+
+The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/NewtonsCradle2_3_4_5_equalmasses_simulator.ipynb). However, this pseudocode gives an idea of the general approach;
+
+```python3
+for t in time_interval:
+    cradle.check_for_collisions()
+    
+    for pend in cradle.pendulums:
+        pend.integrate_step(t)
+    
+    cradle.plot()
+```
 
 <video width="800" height="428" controls>
 	  <source src="{{ site.baseurl }}/cradle/2_masses_1_raised.mp4" type="video/mp4">
