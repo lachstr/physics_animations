@@ -15,29 +15,7 @@ Here "elastic" means the collisions occur conserving energy and momentum.
 
 For a more precise mathematical description please see this [white paper]({{ site.baseurl }}/cradle/cradle_report.pdf).
 
-The following code is a python implementation of the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique.
-
-```python
-class Pendulum:
-
-    ...
-
-    def IntegrateStep(self, delta):
-        j, k = {}, {}
-      
-        j[0] = k[0] = 0
-    
-        for i in [1, 2, 3, 4]:
-            h = delta/2 if i == 2 or i == 3 else delta
-    
-            for (var, func) in [(j, self.θGrad),(k, self.ωGrad)]:
-                
-                var[i] = func(self.θ[-1] + h*var[i-1], self.ω[-1] + h*var[i-1])
-        
-        for (var, state) in [(j, self.θ), (k, self.ω)]:
-            
-            state.append(state[-1] + h/6*(var[1] + 2*var[2] + 2*var[3] + var[4]))
-```
+The [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique was used.
 
 The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/NewtonsCradle2_3_4_5_equalmasses_simulator.ipynb). However, this pseudocode gives an idea of the general approach;
 
