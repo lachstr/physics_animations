@@ -17,9 +17,7 @@ For a more precise mathematical description please see this [white paper]({{ sit
 
 We will use the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique.
 
-```python
-
-``` 
+The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/NewtonsCradle2_3_4_5_equalmasses_simulator.ipynb).
 
 <video width="800" height="428" controls>
 	  <source src="{{ site.baseurl }}/cradle/2_masses_1_raised.mp4" type="video/mp4">
