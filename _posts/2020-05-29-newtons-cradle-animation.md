@@ -38,12 +38,21 @@ One of the most striking results of this simulation is we have appeared to recre
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0LnbyjOyEQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The explanation I can come up with for this originates from what we meant by the seperation between pendulums being "small." 
+The explanation I can come up with for this originates from what we meant by the sepertion between pendulums being "small." 
 
 "If the pendulums ever collide such that atleast one of them is non-perpendicular to the horizontal then there will be a runaway feedback loop where the internal ones begin to move."
 
 A possible explanation for why a real pendulum exhibits this behavior is because the masses either touch on one another or have some non-zero seperation between them - in either case collisions will occur at an angle non-perpendicular to the horizontal and the aforementioned runaway feedback loop will occur. 
 
 With our simulated system we can place the pendulums closer together fairly easily, observe how this increases the time before the motion of the internal masses becomes obvious. 
+
+Original seperation between pendulums
+<video width="800" height="428" controls>
+	  <source src="{{ site.baseurl }}/cradle/3_masses_1_raised.mp4" type="video/mp4">
+</video> 
+1/10th of original seperation between pendulums
+<video width="800" height="428" controls>
+	  <source src="{{ site.baseurl }}/cradle/3_masses_1_raised_closer_at_rest.mp4" type="video/mp4">
+</video> 
 
 We could continue placing the masses closer and closer together, yet this comes at the cost of computation time. I thought this was a very interesting observation.  
