@@ -13,7 +13,7 @@ Here a pendlum means a mass on attached to a massless, rigid, fixed-length <a hr
 
 Here "elastic" means the collisions occur conserving energy and momentum.
 
-For a more precise mathematical description please see this [white paper]({{ site.baseurl }}/report.pdf).
+For a more precise mathematical description please see this [white paper]({{ site.baseurl }}/cradle/cradle_report.pdf).
 
 We will use the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique.
 
