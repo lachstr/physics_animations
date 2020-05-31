@@ -7,8 +7,9 @@ Newton's Cradle has been animated before. However, traditionally it has often be
 
 "Newton's Cradle can be modelled as mutilple pendulums confined to swing along a single axis which undergo elastic collisions with one another. The pendulums rest such that there is a small amount of horizontal displacement between them.''
 
-Here a pendlum means a mass on attached to a massless, rigid, fixed-length l which obeys differential equation 
-...
+Here a pendlum means a mass on attached to a massless, rigid, fixed-length <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\ell" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\ell" title="\ell" /></a> which obeys differential equation 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\ddot{\theta}&space;=&space;-\frac{g}{\ell}\sin(\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\ddot{\theta}&space;=&space;-\frac{g}{\ell}\sin(\theta)" title="\ddot{\theta} = -\frac{g}{\ell}\sin(\theta)" /></a>
 
 Here "elastic" means the collisions occur conserving energy and momentum.
 
@@ -33,6 +34,8 @@ We will use the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutt
 	  <source src="{{ site.baseurl }}/cradle/5_masses_3_raised.mp4" type="video/mp4">
 </video> 
 
-One of the most striking results of this simulation is we have appeared to recreated the effect where the internal balls begin to move. Note how in this [video]() of a real pendulum we see the same effect.
+One of the most striking results of this simulation is we have appeared to recreated the effect where the internal balls begin to move. Note how in this video of a real pendulum we see the same effect.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0LnbyjOyEQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The explanation I can come up with for this originates from what we meant by the seperation between pendulums being "small." 
