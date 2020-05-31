@@ -3,11 +3,11 @@ layout: post
 title: "Newton's Cradle Animation"
 categories: misc
 ---
-Newton's Cradle has been animated before. However, traditionally it has often been achieved via a keyframe method or relying on a complicated physics engine. In this post we will animate Newton's Cradle by implementing our own minimalist physics engine. We will use the following guiding statement to develop our phyiscs engine;
+Newton's Cradle has been animated before. However, traditionally it has often been achieved via a keyframe method or relying on a complicated physics engine. In this post we will animate Newton's Cradle by implementing our own minimalist physics engine. We will use the following guiding statement to develop our simulator;
 
 "Newton's Cradle can be modelled as mutilple pendulums confined to swing along a single axis which undergo elastic collisions with one another. The pendulums rest such that there is a small amount of horizontal displacement between them.''
 
-Here a pendlum means a mass on attached to a massless, rigid, fixed-length <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\ell" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\ell" title="\ell" /></a> which obeys differential equation 
+Here a pendlum means a mass on attached to a massless, rigid, fixed-length <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\ell" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\ell" title="\ell" /></a> with an angle <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\theta" title="\theta" /></a> to the vertical which obeys differential equation 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\ddot{\theta}&space;=&space;-\frac{g}{\ell}\sin(\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\ddot{\theta}&space;=&space;-\frac{g}{\ell}\sin(\theta)" title="\ddot{\theta} = -\frac{g}{\ell}\sin(\theta)" /></a>
 
@@ -53,4 +53,5 @@ Original seperation between pendulums
 	  <source src="{{ site.baseurl }}/cradle/3_masses_1_raised_closer_at_rest.mp4" type="video/mp4">
 </video> 
 
-We could continue placing the masses closer and closer together, yet this comes at the cost of computation time. I thought this was a very interesting observation.  
+We could continue placing the masses closer and closer together, yet this comes at the cost of computation time. I thought this was a very interesting observation.
+
