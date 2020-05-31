@@ -18,17 +18,35 @@ For a more precise mathematical description please see this [white paper]({{ sit
 The following code is a python implementation of the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique.
 
 ```python3
+class Pendulum:
 
+    ...
+
+    def IntegrateStep(self, delta):
+        j, k = {}, {}
+      
+        j[0] = k[0] = 0
+    
+        for i in [1, 2, 3, 4]:
+            h = delta/2 if i == 2 or i == 3 else delta
+    
+            for (var, func) in [(j, self.θGrad),(k, self.ωGrad)]:
+                
+                var[i] = func(self.θ[-1] + h*var[i-1], self.ω[-1] + h*var[i-1])
+        
+        for (var, state) in [(j, self.θ), (k, self.ω)]:
+            
+            state.append(state[-1] + h/6*(var[1] + 2*var[2] + 2*var[3] + var[4]))
 ```
 
 The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/NewtonsCradle2_3_4_5_equalmasses_simulator.ipynb). However, this pseudocode gives an idea of the general approach;
 
 ```python3
 for t in time_interval:
-    cradle.check_for_collisions()
+    cradle.CheckForCollisions()
     
-    for pend in cradle.pendulums:
-        pend.integrate_step(t)
+    for pendulum in cradle.pendulums:
+        pendulum.IntegrateStep(t)
     
     cradle.plot()
 ```
