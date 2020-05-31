@@ -32,3 +32,7 @@ We will use the [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutt
 <video width="800" height="428" controls>
 	  <source src="{{ site.baseurl }}/cradle/5_masses_3_raised.mp4" type="video/mp4">
 </video> 
+
+One of the most striking results of this simulation is we have appeared to recreated the effect where the internal balls begin to move. Note how in this [video]() of a real pendulum we see the same effect.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0LnbyjOyEQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
