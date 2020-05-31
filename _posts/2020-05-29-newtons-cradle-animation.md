@@ -48,7 +48,7 @@ Original seperation between pendulums
 <video width="800" height="428" controls>
 	  <source src="{{ site.baseurl }}/cradle/3_masses_1_raised.mp4" type="video/mp4">
 </video> 
-1/10th of original seperation between pendulums
+1/100th of original seperation between pendulums
 <video width="800" height="428" controls>
 	  <source src="{{ site.baseurl }}/cradle/3_masses_1_raised_closer_at_rest.mp4" type="video/mp4">
 </video> 
