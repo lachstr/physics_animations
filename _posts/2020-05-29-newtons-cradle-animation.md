@@ -65,3 +65,13 @@ Original seperation between pendulums
 
 We could continue placing the masses closer and closer together, yet this comes at the cost of computation time. I thought this was a very interesting observation.
 
+In this animation we require that each mass has the same density, meaning the larger radii on the right has a larger mass.
+
+<video width="800" height="428" controls>
+	  <source src="{{ site.baseurl }}/cradle/2_small_1_big.mp4" type="video/mp4">
+</video> 
+
+<video width="800" height="428" controls>
+	  <source src="{{ site.baseurl }}/cradle/4_small_1_big.mp4" type="video/mp4">
+</video> 
+
