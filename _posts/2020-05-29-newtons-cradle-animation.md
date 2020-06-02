@@ -42,6 +42,7 @@ for t in time_interval:
 	  <source src="{{ site.baseurl }}/cradle/5_masses_3_raised.mp4" type="video/mp4">
 </video> 
 
+<a name="middle_pendulum_motion"></a>
 ## middle pendulum motion
 One of the most striking results of this simulation is we have appeared to recreated the effect where the internal balls begin to move. Note how in this video of a real cradle we see the same effect.
 
@@ -62,6 +63,7 @@ Original separation between pendulums
 
 We could continue placing the masses closer and closer together, yet this comes at the cost of computation time. I thought this was an interesting observation.
 
+<a name="non-equal_masses"></a>
 ## non-equal masses
 In this animation we require that each mass has the same density, meaning the larger radii on the right has a larger mass.
 
