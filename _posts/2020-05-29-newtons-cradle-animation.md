@@ -17,7 +17,7 @@ For a more precise mathematical description please see this [white paper]({{ sit
 
 The [Runge–Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) numerical integration technique was used.
 
-The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/NewtonsCradle2_3_4_5_equalmasses_simulator.ipynb). However, this pseudocode gives an idea of the general approach;
+The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/newtons_cradle_equalmass_simulator.ipynb). However, this pseudocode gives an idea of the general approach;
 
 ```python
 for t in time_interval:
@@ -32,7 +32,6 @@ for t in time_interval:
 <video width="800" height="428" controls>
 	  <source src="{{ site.baseurl }}/cradle/2_masses_1_raised.mp4" type="video/mp4">
 </video> 
-
 
 <video width="800" height="428" controls>
 	  <source src="{{ site.baseurl }}/cradle/3_masses_1_raised.mp4" type="video/mp4">
@@ -65,6 +64,9 @@ We could continue placing the masses closer and closer together, yet this comes 
 
 <a name="non-equal_masses"></a>
 ## non-equal masses
+
+The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/newtons_cradle_variable_mass.ipynb). However, this pseudocode gives an idea of the general approach;
+
 In this animation we require that each mass has the same density, meaning the larger radii on the right has a larger mass.
 
 <video width="800" height="428" controls>
