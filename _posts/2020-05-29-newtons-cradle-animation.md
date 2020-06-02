@@ -47,7 +47,7 @@ One of the most striking results of this simulation is we have appeared to recre
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0LnbyjOyEQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The explanation I can come up with for this originates from what we meant by the separation between pendulums being small.
+The explanation for this originates from what we meant by the separation between pendulums being small.
 
 With our simulated system we can place the pendulums closer together. Observe how this increases the time before the motion of the internal masses becomes obvious. 
 
@@ -79,12 +79,17 @@ In this animation we require that each mass has the same density, meaning the la
 
 ## extra animations
 
+These were computed with 1/100th of original separation between pendulums.
+
 <video width="800" height="428" controls>
-	  <source src="{{ site.baseurl }}/cradle/5_masses_1_raised.mp4" type="video/mp4">
+	  <source src="{{ site.baseurl }}/cradle/5_masses_1_raised_closer_at_rest.mp4" type="video/mp4">
 </video> 
 <video width="800" height="428" controls>
-	  <source src="{{ site.baseurl }}/cradle/5_masses_2_raised.mp4" type="video/mp4">
+	  <source src="{{ site.baseurl }}/cradle/5_masses_2_raised_closer_at_rest.mp4" type="video/mp4">
 </video> 
 <video width="800" height="428" controls>
-	  <source src="{{ site.baseurl }}/cradle/5_masses_3_raised.mp4" type="video/mp4">
+	  <source src="{{ site.baseurl }}/cradle/5_masses_3_raised_closer_at_rest.mp4" type="video/mp4">
+</video> 
+<video width="800" height="428" controls>
+	  <source src="{{ site.baseurl }}/cradle/5_masses_4_raised_closer_at_rest.mp4" type="video/mp4">
 </video> 
