@@ -75,7 +75,7 @@ In this animation we require that each mass has the same density, meaning the la
 	  <source src="{{ site.baseurl }}/cradle/4_small_1_big.mp4" type="video/mp4">
 </video> 
 
-## extra Animations
+## extra animations
 
 <video width="800" height="428" controls>
 	  <source src="{{ site.baseurl }}/cradle/5_masses_1_raised.mp4" type="video/mp4">
