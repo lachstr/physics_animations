@@ -65,7 +65,7 @@ We could continue placing the masses closer and closer together, yet this comes 
 <a name="non-equal_masses"></a>
 ## non-equal masses
 
-The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/newtons_cradle_variable_mass.ipynb). However, this pseudocode gives an idea of the general approach;
+The code used to produce the following animations can be found [here](https://github.com/lachstr/cradle/blob/master/video_out/newtons_cradle_variable_mass.ipynb).
 
 In this animation we require that each mass has the same density, meaning the larger radii on the right has a larger mass.
 
