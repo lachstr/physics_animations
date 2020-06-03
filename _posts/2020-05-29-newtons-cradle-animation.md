@@ -43,7 +43,7 @@ for t in time_interval:
 
 <a name="middle_pendulum_motion"></a>
 ## middle pendulum motion
-One of the most striking results of this simulation is we have appeared to recreated the effect where the internal balls begin to move. Note how in this video of a real cradle we see the same effect.
+One of the most striking results of this simulation is we have recreated the effect where the internal balls begin to move. Note how in this video of a real cradle we see the same effect.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0LnbyjOyEQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
